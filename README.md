@@ -5,6 +5,9 @@
 This library provides an efficient, type safe and macro based 
 ADT to JSON encoder/decoder for circe with configurable JSON type field mappings.
 
+**Because in Scala 3 meta-programming is completely different, this codec was completely revamped for Scala 3, 
+and it lives in a separate repository [here.](https://github.com/abdolence/circe-tagged-adt-codec-scala3)** 
+
 When you have ADTs (as trait and case classes) defined like this
 ```scala
 sealed trait TestEvent
@@ -33,6 +36,8 @@ The main objectives here are:
 ### Scala support
 - Scala v2.12 / v2.13
 - Scala.js v1+
+
+** For Scala 3 look [here.](https://github.com/abdolence/circe-tagged-adt-codec-scala3)
 
 ### Getting Started
 Add the following to your `build.sbt`:
